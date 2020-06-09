@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "701741315162",
+    "firebase_url": "https://chataja-test-c9464.firebaseio.com",
+    "project_id": "chataja-test-c9464",
+    "storage_bucket": "chataja-test-c9464.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701741315162:android:7834a600e86a4d7bc31463",
+        "android_client_info": {
+          "package_name": "com.chataja.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701741315162-6lmjg4njm88u9mkd81fiqp8gvunt3gs1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU8ICAHSB6uqvzwfwiDzCOk5BZl5OgPTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701741315162-6lmjg4njm88u9mkd81fiqp8gvunt3gs1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

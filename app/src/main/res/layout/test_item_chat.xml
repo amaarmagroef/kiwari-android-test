@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.chataja.test.features.main.model.ChatModelData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/test_padding_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tool="http://schemas.android.com/tools">
+        <TextView
+            android:id="@+id/test_username"
+            tool:text="Username"
+            android:text="@{model.username}"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/test_font_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@{model.time}"
+            android:id="@+id/test_time"
+            tool:text="07-10-2016(21:50:21)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/test_font_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/test_chat"
+            tool:text="Lorem Ipsum"
+            android:text="@{model.chat}"
+            android:layout_marginTop="@dimen/test_margin_top_widget_xsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/test_username"
+            android:textSize="@dimen/test_font_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

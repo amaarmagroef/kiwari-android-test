@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Autofill"
+    tools:context=".features.login.view.LoginActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/test_text_inputlayout_email"
+        android:layout_marginTop="@dimen/test_margin_top_widget_regular"
+        android:layout_marginStart="@dimen/test_margin_widget"
+        android:layout_marginEnd="@dimen/test_margin_widget"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/test_edittext_email"
+
+            android:hint="@string/test_hint_email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/test_height_widget"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/test_text_inputlayout_password"
+        android:layout_marginTop="@dimen/test_margin_top_widget_small"
+        android:layout_marginStart="@dimen/test_margin_widget"
+        android:layout_marginEnd="@dimen/test_margin_widget"
+        app:layout_constraintTop_toBottomOf="@+id/test_text_inputlayout_email"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/test_edittext_password"
+
+            android:hint="@string/test_hint_password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/test_height_widget" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/test_action_login"
+        android:textSize="@dimen/test_font_xlarge"
+        android:textColor="@android:color/white"
+        android:text="@string/test_label_login"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="@dimen/test_margin_top_widget_regular"
+        android:layout_marginStart="@dimen/test_margin_widget"
+        android:layout_marginEnd="@dimen/test_margin_widget"
+        app:layout_constraintTop_toBottomOf="@id/test_text_inputlayout_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/test_height_widget"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
