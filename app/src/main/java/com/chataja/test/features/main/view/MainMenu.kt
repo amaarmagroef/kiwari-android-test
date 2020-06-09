@@ -71,6 +71,18 @@ class MainMenu : BaseFragment() {
                 return@observe
             }
             it?.let {
+                for(item in it) {
+                    if (!mAccountPrefManager.getEmail().equals(item.email))
+                    {
+                        Log.d("user", item.nama)
+                        menus.findItem(R.id.action_user_other).setTitle(item.nama)
+                        /*Glide.with(this)
+                            .load(item.avatar)
+                            .apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
+                            .into(menu.findItem(R.id.action_user_other).icon)*/
+                    }
+
+                }
             }
         }
     }
